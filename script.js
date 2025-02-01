@@ -1,7 +1,5 @@
-// URL do seu banco de dados Firebase
 const url = "https://placabombaesp32-default-rtdb.firebaseio.com/nota-identificada.json";
 
-// Função para buscar os dados
 async function buscarMensagem() {
     try {
         const response = await fetch(url);
@@ -13,5 +11,4 @@ async function buscarMensagem() {
     }
 }
 
-// Chamar a função ao carregar a página
 buscarMensagem();
